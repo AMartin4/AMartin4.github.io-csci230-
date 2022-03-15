@@ -1,0 +1,28 @@
+C Program vs. Java Programs
+fast, prerequisite is low
+
+Java is slow, requires OS + Java virtual machine. Not good for small devices 
+
+C program directly manipulate memory 
+
+Two-edge sword: powerful but insecure //C
+
+int main()
+{
+	int a = 0;
+	int *p = &a;
+	printf ("%d", (long)(p));
+	return 0;
+}
+
+
+int * p = &a;
+
+Declare a pointer-type of variable named p, and intialize to the address of variable a
+In a declaration, "*" stands for "pointer-type"
+Afterwards, "*" , means "de-reference", retrieving the value at the memory location, using the syntax *p 
+
+
+p = (int*)malloc(100*size
+equivalent to java's
+p = new int[100]
