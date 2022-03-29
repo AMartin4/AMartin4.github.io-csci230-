@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww13440\viewh9300\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 Representation of Floating point numbers\
+\
+Floating <--> Fixed\
+$31.22 x 10^ -1\
+= 3.122 x 10^0\
+=0.3122 x 10^1\
+\
+Scientific format\
+\
+1.0010001011 x 2^23\
+---------------------\
+Mass of earth = 5.972 x 10^24\
+9.1093837015(28) x 10^31\
+\
+A muber contains three parts: \
+(1) sign\
+(2) exponent\
+(3) significant/effective digits/mantissa\
+\
+Normalized: single digit integer\
+\
+sign: negative: 1\
+         positive: 0\
+\
+exponent: + 127 ==> to 8-bit binary \
+\
+e.g -31 + 127 =  96  => 0110000\
+       127-biased\
+\
+IEEE754: techincal document(standard)\
+	       technical law\
+\
+All numbers that can be represented by IEEE (<4B) are not evenly distributed \
+\
+smallest positive IEEE754 number: 2^(-150)\
+\
+silly loop:\
+float f = lf; \
+while (f > 0)\
+\{\
+	f /= 2;\
+	System.out.println(f);\
+\
+\}\
+IEEE 754 double precision\
+Underflow!\
+\
+Dollar simualtion:\
+float sales: = 17000000f;\
+for (int k=0; k < 1000; k++)\
+	saless = sales + 1;\
+System.out.printlm("sales=" + sales);\
+\
+Because IEEE754 single precision can not distinguish 17000000 and 17000001. These two numbers have the same bit pattern!\
+}
