@@ -1,0 +1,23 @@
+address * 4 
+	100010000001000000010001
+10001000001000000001000000
+
+
+PC+4->10001000001000000000 ...
+
+This scheme make the eff. address to be 32-bit, quite large
+
+beq r1 r2 16-bit-number
+
+if (x1 == x2)
+{
+	many lines
+	100000 lines
+}
+else
+{
+
+}
+
+16 bit number: leading 1 determines this number is negative
+sign extension (keep sign/preserve sign): this number is negative 32-bit
